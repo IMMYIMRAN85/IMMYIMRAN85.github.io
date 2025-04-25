@@ -44,27 +44,38 @@
 
     <h2 style="text-align: center; color: #00334e;">Majestic Manta Ray</h2>
 
-    <!-- Wrap the first paragraph and image in a flex container -->
-    <div style="display: flex; align-items: flex-start; justify-content: center; gap: 20px; max-width: 1000px; margin: auto;">
-      <!-- Paragraph -->
-      <p style="max-width: 700px; text-align: left;">
+    <!-- Flex container for paragraph + image -->
+    <div style="
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 40px;
+      max-width: 1100px;
+      margin: 40px auto;
+      flex-wrap: wrap;
+    ">
+      <!-- Text content -->
+      <p style="flex: 1 1 55%; font-size: 1.1em; line-height: 1.6; text-align: justify;">
         Inspired by the effortless elegance of the manta ray, this project aims to recreate its fluid form and natural movement using advanced 3D modelling techniques and robotics. The manta ray’s unique shape and swimming patterns offer valuable insights into streamlined design and efficient locomotion.
       </p>
 
-      <!-- Image -->
-      <img src="images/MRF.gif" alt="Manta Ray Design" style="max-width: 250px; height: auto;" />
+      <!-- Image content -->
+      <div style="flex: 1 1 40%; text-align: center;">
+        <img src="images/MRF.gif" alt="Manta Ray Design" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 0 20px rgba(0,0,0,0.2);" />
+      </div>
     </div>
 
     <!-- Remaining paragraphs -->
-     <p style="max-width: 700px; text-align: left;">
+    <p style="max-width: 900px; margin: auto; text-align: justify; font-size: 1.1em; line-height: 1.6;">
       Using Fusion 360, we have embarked on a journey of biomimicry — a design approach that learns from nature to solve human challenges. By digitally sculpting the manta ray's anatomy, we aim to understand the balance between form, structure, and functionality in nature.
     </p>
 
-     <p style="max-width: 700px; text-align: left;">
+    <p style="max-width: 900px; margin: auto; text-align: justify; font-size: 1.1em; line-height: 1.6;">
       The ultimate goal is to develop a robotic skin prototype that reflects the manta ray’s graceful movement while exploring potential real-world applications in underwater robotics, design innovation, and sustainable technologies.
     </p>
 
-    <ul class="actions" style="text-align: center;">
+    <!-- Call to action -->
+    <ul class="actions" style="text-align: center; margin-top: 40px;">
       <li><a href="#development-stages" class="button scrolly">Explore Development</a></li>
     </ul>
   </div>
