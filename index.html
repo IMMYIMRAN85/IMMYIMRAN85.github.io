@@ -166,7 +166,8 @@
 		  These studies collectively affirm that hand sketching not only aids in the rapid generation and exploration of ideas but also bridges the gap between conceptualization and digital realization. In the context of biomimetic designs, such as your manta ray artefact, hand sketches can effectively capture the organic forms and fluid dynamics inherent in natural models, serving as a foundational step before transitioning to digital modeling and prototyping.
         </p>
         <ul class="actions">
-          <li><a href="#" class="button" onclick="openGallery()">View Gallery</a></li>
+          <a href="stage1-gallery.html" class="button" target="_blank">View Gallery</a>
+
         </ul>
       </div>
     </div>
@@ -178,15 +179,8 @@
 
 
 <!-- Lightbox Gallery -->
-<div id="imageGallery" class="gallery-overlay">
-	<span class="close-button" onclick="closeGallery()">×</span>
-	<div class="gallery-content">
-		<img src="https://via.placeholder.com/300x200?text=Sketch+1" alt="Sketch 1">
-		<img src="https://via.placeholder.com/300x200?text=Blueprint" alt="Blueprint">
-		<img src="https://via.placeholder.com/300x200?text=Render" alt="Flying Render">
-		<img src="https://via.placeholder.com/300x200?text=STL+Preview" alt="STL Preview">
-	</div>
-</div>
+
+
 
 <!-- CSS Styling for Gallery -->
 <style>
@@ -232,6 +226,8 @@
 }
 </style>
 
+
+
 <!-- JavaScript for Gallery -->
 <script>
 function openGallery() {
@@ -241,10 +237,15 @@ function closeGallery() {
 	document.getElementById('imageGallery').style.display = 'none';
 }
 </script>
+
+
+
+
+
 				<!-- Stage 2 & 3 Wrapper -->
 <section class="spotlights">
 
-  <!-- Stage 2: Creating the Virtual Prototype -->
+	 <!-- Stage 2: Creating the Virtual Prototype -->
   <section>
     <div class="image" style="width: 30%;">
       <img src="images/S2%20I.png" alt="Stage 2" style="width: 120%; height: auto;" />
@@ -253,7 +254,17 @@ function closeGallery() {
       <div class="inner">
         <h2>Stage 2: Creating the Virtual Prototype</h2>
         <p style="text-align: justify;">
-          Once the concept was refined, a 3D model was created using CAD software to digitally sculpt and simulate the manta ray artefact’s form. This stage provided greater precision and flexibility to explore surface details, fin curvature, proportions, and structural functionality. The digital prototype helped us visualise how the artefact would appear in physical form and laid the foundation for material decisions and physical testing in the next stage.
+          Stage 2 of the project marked the transition from initial concept to digital realisation, where the manta ray-inspired
+		  artefact was modelled using Onshape. Before beginning the CAD modelling, we used a haptic pen in conjunction
+		   with digital sculpting tools to explore surface flow, curvature, and proportion in a tactile environment.
+		    This allowed us to better understand the organic structure of the manta ray’s wings and body, translating
+			 natural motion into digital form. The haptic pen gave a more intuitive sense of depth and resistance, 
+			 supporting design decisions that were later fine-tuned in Onshape. Within Onshape, we used sketching, 
+			 lofting, and surface modelling tools to develop the structure from the ground up, ensuring the design
+			 mirrored the symmetry and elegance captured in the earlier sketches. Several digital iterations were 
+			 produced to refine the fin profiles, edge transitions, and 3D printability of the model. 
+			 The resulting virtual prototype faithfully captured the natural flow of the manta ray and served as a 
+			 detailed blueprint for the physical fabrication phase that would follow.
         </p>
         <ul class="actions">
           <li><a href="#two" class="button">Gallery</a></li>
@@ -301,7 +312,7 @@ function closeGallery() {
 
       <section>
         <span class="icon solid major fa-pencil-ruler"></span>
-        <h3>Traditional Model-Making</h3>
+        <h3>Resin Molding</h3>
         <p>Foam carving and resin molding were used to test material flexibility and shaping.</p>
         <a href="#gallery-model" class="button small" onclick="openGallery('gallery-model', 'prototyping-techniques')">Gallery</a>
       </section>
@@ -317,7 +328,7 @@ function closeGallery() {
         <span class="icon solid major fa-pen-fancy"></span>
         <h3>Haptic Pen Sculpting</h3>
         <p>The haptic pen allowed us to sculpt organic digital forms with tactile precision.</p>
-        <a href="#gallery-haptic" class="button small" onclick="openGallery('gallery-haptic', 'prototyping-techniques')">Gallery</a>
+        <a href="#gallery-haptic" class="button small" onclick="openGallery('gallery-haptic', 'prototyping-techniques')">Read More</a>
       </section>
     </div>
   </div>
