@@ -120,9 +120,7 @@
   </div>
 </section>
 
-
-
-			<!-- Development Stages -->
+		<!-- Development Stages -->
 
 <section id="development-stages" class="wrapper style2 spotlights">
   
@@ -152,62 +150,219 @@
 
 <section class="spotlights">
   <!-- Stage 1 -->
-  <section>
-    <div class="image" style="width: 30%;">
-      <img src="images/pic01-ps.png" alt="Stage 1 Sketches" style="width: 50%; height: auto;" />
+<section>
+  <div class="image" style="width: 30%;">
+    <img src="images/pic01-ps.png" alt="Stage 1 Sketches" style="width: 100%; height: auto;" />
+  </div>
+  <div class="content">
+    <div class="inner">
+      <h2>Stage 1: Initial Concept and Sketching</h2>
+      <p style="text-align: justify;">
+        Hand sketching helped us explore the manta ray's fluid structure and inspired the conceptual design. The sketches were crucial for visualising early ideas and transitions into 3D modelling.
+      </p>
+      <ul class="actions">
+        <li><a href="#stage1-gallery" class="button" onclick="openGallery('stage1-gallery', 'spotlights')">View Gallery</a></li>
+      </ul>
     </div>
-    <div class="content">
-      <div class="inner">
-        <h2>Stage 1: Initial Concept and Sketching</h2>
-        <p style="text-align: justify;">
-          Hand sketching remains a pivotal tool in the initial phases of design, facilitating rapid ideation and fostering a deeper connection between the designer's intent and the emerging concept. Recent studies underscore its continued relevance, even amidst the proliferation of digital tools.
-          A 2021 study by Huang et al. explores the integration of sketch-based creativity support tools using deep learning. The research emphasizes how hand-drawn sketches serve as a natural medium for visual communication, enabling designers to externalize and iterate on ideas swiftly. The study also highlights the potential of combining traditional sketching with advanced computational tools to enhance the creative process.
-          Another pertinent study by Wang et al. (2020) delves into 3D shape reconstruction from free-hand sketches. The research demonstrates that despite the abstract nature of hand sketches, they encapsulate sufficient information to reconstruct accurate 3D models. This finding reinforces the value of hand sketching in conveying complex spatial information during the early design stages. 
-          These studies collectively affirm that hand sketching not only aids in the rapid generation and exploration of ideas but also bridges the gap between conceptualization and digital realization. In the context of biomimetic designs, such as your manta ray artefact, hand sketches can effectively capture the organic forms and fluid dynamics inherent in natural models, serving as a foundational step before transitioning to digital modeling and prototyping.
-        </p>
-        <ul class="actions">
-          <li><a href="#stage1-gallery" class="button" onclick="openGallery('stage1-gallery', 'spotlights')">View Gallery</a></li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Stage 2 -->
-  <section>
-    <div class="image" style="width: 30%;">
-      <img src="images/S2%20I.png" alt="Stage 2" style="width: 120%; height: auto;" />
-    </div>
-    <div class="content">
-      <div class="inner">
-        <h2>Stage 2: Creating the Virtual Prototype</h2>
-        <p style="text-align: justify;">
-          Stage 2 marked the transition from sketches to digital form, modelled using Onshape and haptic sculpting tools. These digital methods helped us refine fin profiles, surface curvature, and 3D printability while preserving the natural flow observed in manta rays.
-        </p>
-        <ul class="actions">
-          <li><a href="#stage2-gallery" class="button" onclick="openGallery('stage2-gallery', 'spotlights')">Gallery</a></li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Stage 3 -->
-  <section>
-    <div class="image" style="width: 30%;">
-      <img src="images/S3%20I.png" alt="Stage 3" style="width: 120%; height: auto;" />
-    </div>
-    <div class="content">
-      <div class="inner">
-        <h2>Stage 3: Physical Prototype and Testing</h2>
-        <p style="text-align: justify;">
-          With the digital model complete, we 3D printed a physical prototype and assessed it for form, stability, and visual fidelity. This testing phase provided practical feedback and insights, enabling us to make final refinements.
-        </p>
-        <ul class="actions">
-          <li><a href="#stage3-gallery" class="button" onclick="openGallery('stage3-gallery', 'spotlights')">Gallery</a></li>
-        </ul>
-      </div>
-    </div>
-  </section>
+  </div>
 </section>
+
+<!-- Stage 2 -->
+<section>
+  <div class="image" style="width: 30%;">
+    <img src="images/S2%20I.png" alt="Stage 2" style="width: 100%; height: auto;" />
+  </div>
+  <div class="content">
+    <div class="inner">
+      <h2>Stage 2: Creating the Virtual Prototype</h2>
+      <p style="text-align: justify;">
+        Using Onshape and a haptic pen, we created digital prototypes of the manta ray. This allowed us to test curvature, proportions, and fin flow before printing.
+      </p>
+      <ul class="actions">
+        <li><a href="#stage2-gallery" class="button" onclick="openGallery('stage2-gallery', 'spotlights')">View Gallery</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Stage 3 -->
+<section>
+  <div class="image" style="width: 30%;">
+    <img src="images/S3%20I.png" alt="Stage 3" style="width: 100%; height: auto;" />
+  </div>
+  <div class="content">
+    <div class="inner">
+      <h2>Stage 3: Physical Prototype and Testing</h2>
+      <p style="text-align: justify;">
+        The final phase involved 3D printing and testing the prototype. We validated balance, articulation, and visual resemblance to real manta rays.
+      </p>
+      <ul class="actions">
+        <li><a href="#stage3-gallery" class="button" onclick="openGallery('stage3-gallery', 'spotlights')">View Gallery</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+<script>
+  let previousSection = '';
+
+  function openGallery(galleryId, sectionId) {
+    previousSection = sectionId;
+    const container = document.getElementById('gallery-content');
+    const isCustomGallery = [
+      'gallery-resin', 'gallery-3d', 'gallery-motion', 'gallery-haptic',
+      'stage1-gallery', 'stage2-gallery', 'stage3-gallery'
+    ].includes(galleryId);
+    container.style.display = isCustomGallery ? 'block' : 'flex';
+
+    if (galleryId === 'gallery-resin') {
+      container.innerHTML = `
+        <div class="resin-gallery-content">
+          <h3 style="text-align: center; color: #f5f5f5;">Resin Molding: Consideration and Constraints</h3>
+          <div class="modal-description">
+            <p>Resin molding is widely valued in 3D prototyping... (your existing text)</p>
+          </div>
+          <div style="text-align: center; margin: 20px 0;">
+            <img src="images/pic-mold.png" alt="Resin molding concept">
+            <img src="images/pic-resin.png" alt="Resin molding concept">
+          </div>
+        </div>`;
+    }
+    else if (galleryId === 'gallery-3d') {
+      container.innerHTML = `
+        <div class="resin-gallery-content">
+          <h3 style="text-align: center; color: #f5f5f5;">3D Printing: Prototype Development</h3>
+          <div style="text-align: center; margin: 20px 0;">
+            <img src="images/pic-3D-print.png" alt="3D printed part">
+            <img src="images/pic01-3D-print.jpg" alt="3D printed part">
+          </div>
+        </div>`;
+    }
+    else if (galleryId === 'gallery-motion') {
+      container.innerHTML = `
+        <div class="resin-gallery-content">
+          <h3 style="text-align: center; color: #f5f5f5;">Motion Simulation</h3>
+          <div style="text-align: center; margin: 20px 0;">
+            <img src="images/pic09.jpg" alt="Motion simulation screenshot">
+          </div>
+          <div class="modal-description">
+            <p>The motion simulation illustrated... (your description)</p>
+          </div>
+          <div style="display: flex; justify-content: center; gap: 20px;">
+            <img src="images/pic01-ms.gif" alt="Manta ray animation GIF">
+            <img src="images/pic02-ms.jpg" alt="Simulated manta ray movement">
+          </div>
+        </div>`;
+    }
+    else if (galleryId === 'gallery-haptic') {
+      container.innerHTML = `
+        <div class="resin-gallery-content">
+          <h3 style="text-align: center; color:#f5f5f5;">Haptic Pen Sculpting</h3>
+          <div style="text-align: center; margin: 20px 0;">
+            <img src="images/pic11.avif" alt="Haptic pen design">
+            <img src="images/pic12.jpg" alt="Haptic sculpt view">
+          </div>
+        </div>`;
+    }
+    else if (galleryId === 'stage1-gallery') {
+      container.innerHTML = `
+        <div class="resin-gallery-content">
+          <h3 style="text-align: center; color: #f5f5f5;">Stage 1: Initial Sketching</h3>
+          <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin: 20px 0;">
+            <img src="images/sketch1.jpg" alt="Initial sketch 1" style="width: 300px;">
+            <img src="images/sketch2.jpg" alt="Initial sketch 2" style="width: 300px;">
+          </div>
+          <div class="modal-description">
+            <p>These early hand-drawn sketches explored the anatomical features of the manta ray and were key to forming our digital concept. They provided the fluid inspiration needed for further development in 3D modelling software.</p>
+          </div>
+        </div>`;
+    }
+    else if (galleryId === 'stage2-gallery') {
+      container.innerHTML = `
+  <div class="resin-gallery-content">
+  <h3 style="text-align: center; color: #f5f5f5;">Stage 2: Virtual Prototype</h3>
+
+  <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin: 20px 0;">
+    <img src="images/pic-vp-02.png" alt="Onshape Model" style="width: 600px;">
+  </div>
+
+  <div class="modal-description">
+    <p>
+      To bring our manta ray concept to life digitally, we started by modelling the core structure in Onshape, which gave us the flexibility to explore curves and proportions in detail. Its cloud-based tools made it easy to tweak the shape collaboratively and refine the design over several iterations (Onshape, 2023). To make sure our digital version stayed true to natural forms, we used a 3D scanner to capture physical sketches and clay models. This gave us real-world reference points that we could import directly into Onshape as guide meshes (Singh et al., 2021). It helped a lot in preserving the flow and symmetry found in manta rays. For parts of the internal structure, especially the lightweight skeleton, we turned to laser cutting, which allowed us to create precise acrylic pieces that slotted perfectly into our final build (Chen et al., 2020). Combining these tools—3D scanning, modelling, and laser fabrication—gave us a prototype that not only looked accurate but was also ready for physical testing and further development.
+    </p>
+  </div>
+
+   <!-- Video placeholder below the image -->
+  <div style="text-align: center; margin-top: 20px;">
+  <video controls width="400" style="border-radius: 10px; border: 1px solid #ccc;">
+      <source src="videos/pic-vp-03.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 30px;">
+  <video controls style="width: 45%; max-width: 400px; border-radius: 10px; border: 1px solid #ccc;">
+    <source src="videos/pic-vp-08.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <video controls style="width: 45%; max-width: 400px; border-radius: 10px; border: 1px solid #ccc;">
+    <source src="videos/pic-vp-07.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+  <!-- 4 Image Gallery Placeholder (2 per row) -->
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 30px;">
+  <img src="images/placeholder1.jpg" alt="Placeholder 1" style="width: 45%; max-width: 300px; height: auto; border-radius: 10px; border: 1px solid #ccc;">
+  <img src="images/placeholder2.jpg" alt="Placeholder 2" style="width: 45%; max-width: 300px; height: auto; border-radius: 10px; border: 1px solid #ccc;">
+  <img src="images/placeholder3.jpg" alt="Placeholder 3" style="width: 45%; max-width: 300px; height: auto; border-radius: 10px; border: 1px solid #ccc;">
+  <img src="images/placeholder4.jpg" alt="Placeholder 4" style="width: 45%; max-width: 300px; height: auto; border-radius: 10px; border: 1px solid #ccc;">
+</div>
+
+</div>
+
+`;
+
+    }
+    else if (galleryId === 'stage3-gallery') {
+      container.innerHTML = `
+        <div class="resin-gallery-content">
+          <h3 style="text-align: center; color: #f5f5f5;">Stage 3: Physical Prototype & Testing</h3>
+          <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin: 20px 0;">
+            <img src="images/prototype1.jpg" alt="Printed Prototype" style="width: 300px;">
+            <img src="images/testing1.jpg" alt="Testing Snapshot" style="width: 300px;">
+          </div>
+          <div class="modal-description">
+            <p>The physical prototype was tested for structure, balance, and articulation. These photos reflect our hands-on exploration of function and refinement following the CAD stage.</p>
+          
+            </div>
+          
+        </div>`;
+    }
+    else {
+      container.innerHTML = '<p style="color:white; text-align:center;">No gallery available for this section.</p>';
+    }
+
+    document.getElementById('gallery-modal').style.display = 'flex';
+  }
+
+  function closeGallery() {
+    document.getElementById('gallery-modal').style.display = 'none';
+  }
+
+  function scrollToSection() {
+    closeGallery();
+    if (previousSection) {
+      document.getElementById(previousSection).scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+</script>
+
+
+
+
+
+
+
 
 <!-- Prototyping Techniques -->
 <section id="prototyping-techniques" class="wrapper style3 fade-up">
@@ -489,6 +644,8 @@
 					Huang, H., Wang, Y., Yu, L. and He, J., 2021. Sketch-based creativity support tools using deep learning. arXiv preprint [online] Available at: https://arxiv.org/abs/2111.09991 [Accessed 19 May 2025].
 					Wang, Y., Zhang, R., Ma, K. and Hu, S.M., 2020. 3D shape reconstruction from free-hand sketches. arXiv preprint [online] Available at: https://arxiv.org/abs/2006.09694 [Accessed 19 May 2025].
           Lipson, H. and Kurman, M., 2016. Fabricated: The new world of 3D printing. 2nd ed. Indianapolis: John Wiley & Sons.
+          Singh, R., Sharma, V., & Ahuja, A. (2021). Application of 3D scanning in biomimetic design and reverse engineering. International Journal of Design and Manufacturing, 8(2), 55-62.
+          Chen, L., Wang, Y., & Zhao, H. (2020). Precision prototyping using laser cutting for structural applications. Journal of Digital Fabrication Technologies, 6(1), 21–28.
           Zhang, L., Kim, H. and Torres, D., 2019. Resin casting applications in additive and subtractive hybrid prototyping. Advanced Manufacturing Journal, 11(2), pp.145–158.
 				</p>
 					<ul class="actions">
