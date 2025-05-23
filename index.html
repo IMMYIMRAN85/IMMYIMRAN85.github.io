@@ -150,218 +150,53 @@
 
 <section class="spotlights">
   <!-- Stage 1 -->
-<section>
-  <div class="image" style="width: 30%;">
-    <img src="images/pic01-ps.png" alt="Stage 1 Sketches" style="width: 100%; height: auto;" />
-  </div>
-  <div class="content">
-    <div class="inner">
-      <h2>Stage 1: Initial Concept and Sketching</h2>
-      <p style="text-align: justify;">
-        Hand sketching helped us explore the manta ray's fluid structure and inspired the conceptual design. The sketches were crucial for visualising early ideas and transitions into 3D modelling.
-      </p>
-      <ul class="actions">
-        <li><a href="#stage1-gallery" class="button" onclick="openGallery('stage1-gallery', 'spotlights')">View Gallery</a></li>
-      </ul>
+  <section id="stage1">
+    <div class="image" style="width: 30%;">
+      <img src="images/pic01-ps.png" alt="Stage 1 Sketches" style="width: 100%; height: auto;" />
     </div>
-  </div>
-</section>
-
-<!-- Stage 2 -->
-<section>
-  <div class="image" style="width: 30%;">
-    <img src="images/S2%20I.png" alt="Stage 2" style="width: 100%; height: auto;" />
-  </div>
-  <div class="content">
-    <div class="inner">
-      <h2>Stage 2: Creating the Virtual Prototype</h2>
-      <p style="text-align: justify;">
-        Using Onshape and a haptic pen, we created digital prototypes of the manta ray. This allowed us to test curvature, proportions, and fin flow before printing.
-      </p>
-      <ul class="actions">
-        <li><a href="#stage2-gallery" class="button" onclick="openGallery('stage2-gallery', 'spotlights')">View Gallery</a></li>
-      </ul>
+    <div class="content">
+      <div class="inner">
+        <h2>Stage 1: Initial Concept and Sketching</h2>
+        <p style="text-align: justify;">
+          Creating an initial sketch is one of the most important early steps in developing any artefact. It helps translate raw ideas into a visual form, making it easier to think through the concept and communicate it clearly to others. In our project, sketching allowed us to explore different layouts, test interaction flows, and catch potential usability issues before any coding began. According to Buxton (2007), sketches are not about beauty or perfection, they are tools for thinking, discovering, and iterating quickly. They also serve as a shared language between creators and stakeholders, enabling better collaboration and feedback (Greenberg et al., 2012). Our initial sketches played a vital role in shaping the final artefact by laying down a clear foundation that guided design and development decisions throughout the project.
+        </p>
+        <!-- Removed popup button -->
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Stage 3 -->
-<section>
-  <div class="image" style="width: 30%;">
-    <img src="images/S3%20I.png" alt="Stage 3" style="width: 100%; height: auto;" />
-  </div>
-  <div class="content">
-    <div class="inner">
-      <h2>Stage 3: Physical Prototype and Testing</h2>
-      <p style="text-align: justify;">
-        The final phase involved 3D printing and testing the prototype. We validated balance, articulation, and visual resemblance to real manta rays.
-      </p>
-      <ul class="actions">
-        <li><a href="#stage3-gallery" class="button" onclick="openGallery('stage3-gallery', 'spotlights')">View Gallery</a></li>
-      </ul>
+  <!-- Stage 2 -->
+  <section id="stage2">
+    <div class="image" style="width: 30%;">
+      <img src="images/S2%20I.png" alt="Stage 2" style="width: 100%; height: auto;" />
     </div>
-  </div>
+    <div class="content">
+      <div class="inner">
+        <h2>Stage 2: Creating the Virtual Prototype</h2>
+        <p style="text-align: justify;">
+          To bring our manta ray concept into a digital form, we used Onshape a cloud-based CAD software known for its real-time collaboration and precision tools. Starting with the basic skeletal structure, we applied surfacing techniques to capture the curvature and fluid form of the manta ray’s wings. The ability to adjust features parametrically made it easier to refine proportions and simulate realistic fin movement. To ensure accuracy, we imported scanned reference models of hand-drawn sketches, allowing us to align the digital design with natural anatomical features. This integration of manual and digital processes not only enhanced the design's authenticity but also reduced trial-and-error during physical prototyping (Singh et al., 2021). By combining CAD modelling with 3D scanning input, we achieved a prototype that was both visually accurate and structurally ready for testing.
+        </p>
+        <!-- Removed popup button -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Stage 3 -->
+  <section id="stage3">
+    <div class="image" style="width: 30%;">
+      <img src="images/S3%20I.png" alt="Stage 3" style="width: 100%; height: auto;" />
+    </div>
+    <div class="content">
+      <div class="inner">
+        <h2>Stage 3: Physical Prototype and Testing</h2>
+        <p style="text-align: justify;">
+          Following the completion of the virtual prototype, we progressed to the fabrication of a physical model using fused deposition modelling (FDM) with PLA filament. This rapid prototyping method enabled us to evaluate the structural integrity and articulation of our design in real-world conditions. Initial test prints revealed several issues, such as excessive bulk and limited flexibility in the fin structure. In response, we refined the skeletal framework by reducing its overall thickness and incorporating cut-outs to improve mobility and decrease weight. Hinged joints were also added to replicate the undulating movement characteristic of manta rays. To provide additional rigidity without compromising the lightweight design, certain elements were laser-cut from acrylic, ensuring clean, precise fits for key load-bearing components. Although resin casting was initially considered for enhanced finish and flexibility, it was ultimately excluded due to time constraints and the extended curing period required (Zhang, Kim and Torres, 2019; Walker, 2015). The testing phase was instrumental in validating the model’s balance, aesthetics, and mechanical performance, setting the foundation for further refinement and assembly (Chen, Wang and Zhao, 2020; Lipson and Kurman, 2016).
+        </p>
+        <!-- Removed popup button -->
+      </div>
+    </div>
+  </section>
 </section>
-<script>
-  let previousSection = '';
-
-  function openGallery(galleryId, sectionId) {
-    previousSection = sectionId;
-    const container = document.getElementById('gallery-content');
-    const isCustomGallery = [
-      'gallery-resin', 'gallery-3d', 'gallery-motion', 'gallery-haptic',
-      'stage1-gallery', 'stage2-gallery', 'stage3-gallery'
-    ].includes(galleryId);
-    container.style.display = isCustomGallery ? 'block' : 'flex';
-
-    if (galleryId === 'gallery-resin') {
-      container.innerHTML = `
-        <div class="resin-gallery-content">
-          <h3 style="text-align: center; color: #f5f5f5;">Resin Molding: Consideration and Constraints</h3>
-          <div class="modal-description">
-            <p>Resin molding is widely valued in 3D prototyping... (your existing text)</p>
-          </div>
-          <div style="text-align: center; margin: 20px 0;">
-            <img src="images/pic-mold.png" alt="Resin molding concept">
-            <img src="images/pic-resin.png" alt="Resin molding concept">
-          </div>
-        </div>`;
-    }
-    else if (galleryId === 'gallery-3d') {
-      container.innerHTML = `
-        <div class="resin-gallery-content">
-          <h3 style="text-align: center; color: #f5f5f5;">3D Printing: Prototype Development</h3>
-          <div style="text-align: center; margin: 20px 0;">
-            <img src="images/pic-3D-print.png" alt="3D printed part">
-            <img src="images/pic01-3D-print.jpg" alt="3D printed part">
-          </div>
-        </div>`;
-    }
-    else if (galleryId === 'gallery-motion') {
-      container.innerHTML = `
-        <div class="resin-gallery-content">
-          <h3 style="text-align: center; color: #f5f5f5;">Motion Simulation</h3>
-          <div style="text-align: center; margin: 20px 0;">
-            <img src="images/pic09.jpg" alt="Motion simulation screenshot">
-          </div>
-          <div class="modal-description">
-            <p>The motion simulation illustrated... (your description)</p>
-          </div>
-          <div style="display: flex; justify-content: center; gap: 20px;">
-            <img src="images/pic01-ms.gif" alt="Manta ray animation GIF">
-            <img src="images/pic02-ms.jpg" alt="Simulated manta ray movement">
-          </div>
-        </div>`;
-    }
-    else if (galleryId === 'gallery-haptic') {
-      container.innerHTML = `
-        <div class="resin-gallery-content">
-          <h3 style="text-align: center; color:#f5f5f5;">Haptic Pen Sculpting</h3>
-          <div style="text-align: center; margin: 20px 0;">
-            <img src="images/pic11.avif" alt="Haptic pen design">
-            <img src="images/pic12.jpg" alt="Haptic sculpt view">
-          </div>
-        </div>`;
-    }
-    else if (galleryId === 'stage1-gallery') {
-      container.innerHTML = `
-        <div class="resin-gallery-content">
-          <h3 style="text-align: center; color: #f5f5f5;">Stage 1: Initial Sketching</h3>
-          <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin: 20px 0;">
-            <img src="images/sketch1.jpg" alt="Initial sketch 1" style="width: 300px;">
-            <img src="images/sketch2.jpg" alt="Initial sketch 2" style="width: 300px;">
-          </div>
-          <div class="modal-description">
-            <p>These early hand-drawn sketches explored the anatomical features of the manta ray and were key to forming our digital concept. They provided the fluid inspiration needed for further development in 3D modelling software.</p>
-          </div>
-        </div>`;
-    }
-    else if (galleryId === 'stage2-gallery') {
-      container.innerHTML = `
-  <div class="resin-gallery-content">
-  <h3 style="text-align: center; color: #f5f5f5;">Stage 2: Virtual Prototype</h3>
-
-  <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin: 20px 0;">
-    <img src="images/pic-vp-02.png" alt="Onshape Model" style="width: 600px;">
-  </div>
-
-  <div class="modal-description">
-    <p>
-      To bring our manta ray concept to life digitally, we started by modelling the core structure in Onshape, which gave us the flexibility to explore curves and proportions in detail. Its cloud-based tools made it easy to tweak the shape collaboratively and refine the design over several iterations (Onshape, 2023). To make sure our digital version stayed true to natural forms, we used a 3D scanner to capture physical sketches and clay models. This gave us real-world reference points that we could import directly into Onshape as guide meshes (Singh et al., 2021). It helped a lot in preserving the flow and symmetry found in manta rays. For parts of the internal structure, especially the lightweight skeleton, we turned to laser cutting, which allowed us to create precise acrylic pieces that slotted perfectly into our final build (Chen et al., 2020). Combining these tools—3D scanning, modelling, and laser fabrication—gave us a prototype that not only looked accurate but was also ready for physical testing and further development.
-    </p>
-  </div>
-
-   <!-- Video placeholder below the image -->
-  <div style="text-align: center; margin-top: 20px;">
-  <video controls width="400" style="border-radius: 10px; border: 1px solid #ccc;">
-      <source src="videos/pic-vp-03.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
-  <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 30px;">
-  <video controls style="width: 45%; max-width: 400px; border-radius: 10px; border: 1px solid #ccc;">
-    <source src="videos/pic-vp-08.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-
-  <video controls style="width: 45%; max-width: 400px; border-radius: 10px; border: 1px solid #ccc;">
-    <source src="videos/pic-vp-07.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</div>
-
-  <!-- 4 Image Gallery Placeholder (2 per row) -->
-<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 30px;">
-  <img src="images/placeholder1.jpg" alt="Placeholder 1" style="width: 45%; max-width: 300px; height: auto; border-radius: 10px; border: 1px solid #ccc;">
-  <img src="images/placeholder2.jpg" alt="Placeholder 2" style="width: 45%; max-width: 300px; height: auto; border-radius: 10px; border: 1px solid #ccc;">
-  <img src="images/placeholder3.jpg" alt="Placeholder 3" style="width: 45%; max-width: 300px; height: auto; border-radius: 10px; border: 1px solid #ccc;">
-  <img src="images/placeholder4.jpg" alt="Placeholder 4" style="width: 45%; max-width: 300px; height: auto; border-radius: 10px; border: 1px solid #ccc;">
-</div>
-
-</div>
-
-`;
-
-    }
-    else if (galleryId === 'stage3-gallery') {
-      container.innerHTML = `
-        <div class="resin-gallery-content">
-          <h3 style="text-align: center; color: #f5f5f5;">Stage 3: Physical Prototype & Testing</h3>
-          <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin: 20px 0;">
-            <img src="images/prototype1.jpg" alt="Printed Prototype" style="width: 300px;">
-            <img src="images/testing1.jpg" alt="Testing Snapshot" style="width: 300px;">
-          </div>
-          <div class="modal-description">
-            <p>The physical prototype was tested for structure, balance, and articulation. These photos reflect our hands-on exploration of function and refinement following the CAD stage.</p>
-          
-            </div>
-          
-        </div>`;
-    }
-    else {
-      container.innerHTML = '<p style="color:white; text-align:center;">No gallery available for this section.</p>';
-    }
-
-    document.getElementById('gallery-modal').style.display = 'flex';
-  }
-
-  function closeGallery() {
-    document.getElementById('gallery-modal').style.display = 'none';
-  }
-
-  function scrollToSection() {
-    closeGallery();
-    if (previousSection) {
-      document.getElementById(previousSection).scrollIntoView({ behavior: 'smooth' });
-    }
-  }
-</script>
-
-
-
-
-
-
 
 
 <!-- Prototyping Techniques -->
@@ -484,7 +319,7 @@
 
 <!-- Gallery JavaScript -->
 <script>
-  let previousSection = '';
+  previousSection = '';
 
   function openGallery(galleryId, sectionId) {
     previousSection = sectionId;
@@ -495,13 +330,12 @@
     if (galleryId === 'gallery-resin') {
       container.innerHTML = `
         <div class="resin-gallery-content">
-          <h3 style="text-align: center; color: #f5f5f5;">Resin Molding: Consideration and Constraints</h3>
-         
-          <div class="modal-description">
-  <p>
-    Resin molding is widely valued in 3D prototyping for its ability to produce smooth, high-detail replicas of organic forms. It enables designers to create durable and visually accurate prototypes from custom foam core molds, making it ideal for sculptural or biomimetic models like the manta ray. The process offers excellent surface finish, dimensional stability, and flexibility in capturing complex geometries that are often challenging with direct 3D printing alone. Although this method was not implemented in our project due to time constraints and curing requirements, its relevance in high-fidelity product development is well documented. As noted by Zhang et al. (2019), resin casting "bridges digital design with tactile validation" and plays a vital role in fields requiring aesthetic precision and material testing (<em>Advanced Manufacturing Journal</em>).
-  </p>
-    </div>      
+         <h3 style="text-align: center; color: #f5f5f5;">Resin Molding: Consideration and Constraints</h3>
+         <div class="modal-description">
+          <p>
+          Resin moulding was initially considered for this project due to its ability to produce durable, high-quality parts with smooth finishes-ideal for creating refined and professional-looking components. It allows for a high level of customisation in shape and detail, which would have been beneficial for our artefact’s final appearance and structural integrity. However, due to the tight timeline and the curing time required for resin to set properly, we were unable to incorporate this technique into our process. As Walker (2015) explains, while resin moulding offers excellent results, it demands careful planning, controlled conditions, and considerable time for mixing, pouring, and curing, all of which were beyond our available timeframe in this project cycle.
+          </p>
+          </div>      
            <div style="text-align: center; margin: 20px 0;">
             <img src="images/pic-mold.png" alt="Resin molding concept" style="max-width: 100%; height: auto; border-radius: 10px; border: 1px solid #ccc;">
             <img src="images/pic-resin.png" alt="Resin molding concept" style="max-width: 100%; height: auto; border-radius: 10px; border: 1px solid #ccc;">
@@ -515,26 +349,38 @@
           allowfullscreen>
           </iframe>
           </div>
-
-            </div>
-
-        </div>
-      `;
-    } else if (galleryId === 'gallery-3d') {
+          </div>
+        </div> `;
+           } else if (galleryId === 'gallery-3d') {
       container.innerHTML = `
         <div class="resin-gallery-content">
           <h3 style="text-align: center; color: #f5f5f5;">3D Printing: Prototype Development</h3>
           <div style="text-align: center; margin: 20px 0;">
-            <img src="images/pic-3D-print.png" alt="3D printed part" style="max-width: 60%; height: auto; border-radius: 10px; border: 1px solid #ccc; margin-bottom: 20px;">
-            
-          </div>
+           <img src="images/pic-3D-print.png" alt="3D printed part" style="max-width: 60%; height: auto; border-radius: 10px; border: 1px solid #ccc; margin-bottom: 20px;">
+            </div>
           <div class="modal-description">
         <p>
         In our project, the 3D printer played a key role in rapidly producing lightweight and accurate structural components that represented the manta ray’s form. It allowed for quick iteration, enabling us to validate design decisions through tangible prototypes and test aspects such as part fit, articulation, and proportion before full system integration. The speed and precision of 3D printing significantly enhanced our workflow by reducing manual fabrication time and supporting geometry that would have been difficult to sculpt by hand. According to Lipson and Kurman (2016), 3D printing offers "an unprecedented bridge between digital design and physical realisation," particularly in fields where complex shapes and fast prototyping are essential (<em>Fabricated: The New World of 3D Printing</em>).
         </p>
         </div>
+        <div style="display: flex; justify-content: center; gap: 20px; margin: 30px 0; flex-wrap: wrap;">
+        <img src="images/pic-vp-01.jpg" alt="3D printed part" style="width: 45%; border-radius: 10px; border: 1px solid #ccc;">
+        <img src="images/pic00.jpg" alt="3D printed part" style="width: 45%; border-radius: 10px; border: 1px solid #ccc;">
+        </div>
+         </div>
+        <div style="display: flex; justify-content: center; gap: 20px; margin: 30px 0; flex-wrap: wrap;">
+        <img src="images/pic02-ms.jpg" alt="3D printed part" style="width: 45%; border-radius: 10px; border: 1px solid #ccc;">
+        <img src="images/pic-vp-09.jpg" alt="3D printed part" style="width: 45%; border-radius: 10px; border: 1px solid #ccc;">
+        </div>
+       <div class="modal-description" style="margin-bottom: 30px;">
+      <p style="text-align: justify; margin: 0;">
+      Achieving a functional model that accurately mimics the movement of a real manta ray involved multiple stages of iteration and refinement. We began by studying the biomechanics of manta ray locomotion, particularly the fluid motion of their fins. Using CAD tools like Onshape, combined with haptic sculpting for organic form shaping, we developed a flexible prototype structure that captured the essence of their natural movement. This was followed by several rounds of 3D printing and physical testing, where we adjusted articulation points, material flexibility, and fin curvature. Through continuous feedback and design adaptation, we were finally able to replicate the smooth undulating motion of a manta ray in a controlled environment—resulting in a model that not only looks accurate but also moves in a lifelike manner.
+      </p>
+      </div>
         <div style="text-align: center; margin: 30px 0;">
-          <img src="images/pic01-3D-print.jpg" alt="3D printed part" style="max-width: 80%; height: auto; border-radius: 10px; border: 1px solid #ccc; margin-bottom: 20px;">
+        <video controls style="width: 80%; max-width: 700px; border-radius: 10px; border: 1px solid #ccc;">
+        <source src="videos/mim-final.mp4" type="video/mp4">
+         </video>    
           <iframe width="560" height="315"
           src="https://www.youtube.com/embed/9cLFAI1_fmU?si=p52NDPiByMeKK5Ig"
           title="YouTube video player"
@@ -544,9 +390,7 @@
           allowfullscreen>
   </iframe>
 </div>
-
-
-        </div>
+ </div>
       `;
     } else if (galleryId === 'gallery-motion') {
       container.innerHTML = `
@@ -569,10 +413,9 @@
   <!-- Side-by-side images -->
   <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin: 30px 0;">
     <img src="images/pic01-ms.gif" alt="Manta ray animation GIF"
-         style="width: 300px; height: auto; border-radius: 10px; border: 1px solid #ccc;">
-
+     style="width: 300px; height: auto; border-radius: 10px; border: 1px solid #ccc;">
     <img src="images/pic02-ms.jpg" alt="Simulated manta ray movement"
-         style="width: 300px; height: auto; border-radius: 10px; border: 1px solid #ccc;">
+     style="width: 300px; height: auto; border-radius: 10px; border: 1px solid #ccc;">
   </div>
 </div>
 
@@ -599,8 +442,8 @@
     <!-- New images after text -->
     <div style="text-align: center; margin: 30px 0 10px 0;">
       <img src="images/pic12.jpg" alt="Sculpt view 1" style="max-width: 100%; height: auto; border-radius: 10px; border: 1px solid #ccc; margin-bottom: 20px;">
-      <img src="images/haptic-extra2.png" alt="Sculpt view 2" style="max-width: 100%; height: auto; border-radius: 10px; border: 1px solid #ccc; margin-bottom: 20px;">
-      <img src="images/haptic-extra3.png" alt="Sculpt view 3" style="max-width: 100%; height: auto; border-radius: 10px; border: 1px solid #ccc;">
+      <img src="images/pic1-hp.jpg" alt="Sculpt view 2" style="max-width: 100%; height: auto; border-radius: 10px; border: 1px solid #ccc; margin-bottom: 20px;">
+      <img src="images/pic2-hp.jpg" alt="Sculpt view 3" style="max-width: 100%; height: auto; border-radius: 10px; border: 1px solid #ccc;">
     </div>
     <div style="text-align: center; margin-top: 20px;">
   <video controls style="max-width: 600px; width: 100%; border-radius: 10px; border: 1px solid #ccc;">
@@ -629,15 +472,21 @@
   }
 </script>
 
-
-			<!-- Reflection -->
+<!-- Reflection -->
 			<section id="reflection" class="wrapper style2 fade-up">
 				<div class="inner">
 					<h2>Reflection/Literature Review</h2>
-					<p>Reflecting on the development process, several aspects of the workflow could be improved. For example, integrating more advanced materials in future prototypes could lead to better aerodynamics. Additionally, streamlining the iterative testing process would save time and resources.In this section, I will reflect on the relevant literature surrounding the movement and design of manta rays, focusing on their behavioral and migratory patterns, and how these natural phenomena have inspired innovative design solutions. Recent studies emphasize the complex migratory behavior of manta rays (Jones et al., 2022), which has inspired bio-mimicry in product design. For instance, the hydrodynamic properties of manta rays' bodies have been used as a model for more efficient underwater propulsion systems (Taylor and Roberts, 2023). These studies reinforce the importance of observing nature for sustainable design innovation.
-					Manta rays are also central to marine ecosystems, and their social structures are crucial to their survival. Understanding these behaviors (Smith, 2021) has influenced design decisions in projects such as my own, where I aim to mimic their smooth, fluid movements. Furthermore, conservation efforts have highlighted the fragility of manta ray populations, especially in Southeast Asia (Brown, 2020), urging more sustainable, eco-friendly approaches to designing products inspired by these creatures.</p>
-					<h2>Referrences</h2>
-					<p>Jones, A., Roberts, M. and Taylor, P., 2022. Migration patterns of manta rays in the Indo-Pacific region. Journal of Marine Conservation, 45(2), pp. 112-130.
+
+					<p style="text-align: justify;">
+            Looking back at the development process, this project has been an eye-opening journey that blended creativity, engineering, and inspiration from nature. We started with hand-drawn sketches to capture the organic form of the manta ray and gradually progressed to a functioning physical prototype using digital tools and rapid prototyping techniques. Each stage gave us an opportunity to learn and refine our approach.
+            Our use of Onshape for digital modelling was particularly beneficial, as it allowed for collaboration and flexible design adjustments. Being able to import reference scans of clay and sketch models helped preserve anatomical accuracy and natural proportions, especially in mimicking the manta ray’s flow and symmetry (Singh, Sharma and Ahuja, 2021). Although we initially intended to use resin casting to enhance surface realism, we had to scale back due to time limitations. Resin moulding, while effective for high-quality finishes, requires longer curing times and careful planning, which we could not accommodate within our schedule (Walker, 2015).
+            The physical prototype brought the design to life. Using laser-cut acrylic for the internal frame and 3D-printed parts, we constructed a lightweight yet strong structure. The servo-driven motion system successfully simulated the flapping motion of manta ray fins, offering a convincing and engaging outcome (Chen, Wang and Zhao, 2020). This stage showed us how digital designs translate into real-world performance and reminded us of the challenges of balancing visual accuracy with mechanical function.
+            Moreover, reflecting on the bio-inspired elements, we realised how observing natural behaviours can inform sustainable and innovative design. Manta rays are not only visually fascinating but also efficient swimmers, and studying their form gave us insight into improving underwater motion systems (Taylor and Roberts, 2023). This appreciation for biomimicry has shaped our mindset as future designers and engineers.
+            In conclusion, the project not only allowed us to develop practical skills in design and fabrication, but it also deepened our understanding of how technology and nature can work together. We are confident that this experience will influence how we approach problem-solving and prototyping in future projects.</p>
+					
+            <h2>Referrences</h2>
+					<p style="text-align: justify;">
+          Jones, A., Roberts, M. and Taylor, P., 2022. Migration patterns of manta rays in the Indo-Pacific region. Journal of Marine Conservation, 45(2), pp. 112-130.
 					Smith, J., 2021. Manta ray behavior in the Pacific Ocean. Marine Biology Journal, 48(3), pp. 34-56.
 					Brown, L., 2020. Manta ray conservation efforts in Southeast Asia. Available at: https://www.mantarayconservation.org/articles (Accessed: 16 April 2025).
 					Taylor, P. and Roberts, M., 2023. Bio-inspired propulsion systems: The manta ray’s role in modern underwater robotics. Oceanic Design Journal, 50(1), pp. 65-79.
@@ -646,6 +495,13 @@
           Lipson, H. and Kurman, M., 2016. Fabricated: The new world of 3D printing. 2nd ed. Indianapolis: John Wiley & Sons.
           Singh, R., Sharma, V., & Ahuja, A. (2021). Application of 3D scanning in biomimetic design and reverse engineering. International Journal of Design and Manufacturing, 8(2), 55-62.
           Chen, L., Wang, Y., & Zhao, H. (2020). Precision prototyping using laser cutting for structural applications. Journal of Digital Fabrication Technologies, 6(1), 21–28.
+          Chen, L., Wang, Y. and Zhao, H., 2020. Precision prototyping using laser cutting for structural applications. Journal of Digital Fabrication Technologies, 6(1), pp.21–28.
+          Lipson, H. and Kurman, M., 2016. Fabricated: The New World of 3D Printing. 2nd ed. Indianapolis: John Wiley & Sons.
+          Chen, L., Wang, Y. and Zhao, H., 2020. Precision prototyping using laser cutting for structural applications. Journal of Digital Fabrication Technologies, 6(1), pp.21–28.
+          Singh, R., Sharma, V. and Ahuja, A., 2021. Application of 3D scanning in biomimetic design and reverse engineering. International Journal of Design and Manufacturing, 8(2), pp.55–62.
+          Taylor, P. and Roberts, M., 2023. Bio-inspired propulsion systems: The manta ray’s role in modern underwater robotics. Oceanic Design Journal, 50(1), pp.65–79.
+          Walker, D., 2015. Advanced Moulding Techniques for Functional Prototypes. Engineering Design Journal, 32(4), pp.55–63.
+          Walker, D., 2015. Advanced Moulding Techniques for Functional Prototypes. Engineering Design Journal, 32(4), pp.55–63.
           Zhang, L., Kim, H. and Torres, D., 2019. Resin casting applications in additive and subtractive hybrid prototyping. Advanced Manufacturing Journal, 11(2), pp.145–158.
 				</p>
 					<ul class="actions">
