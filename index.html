@@ -138,11 +138,11 @@
 			 materials, and techniques were utilised:</p>
         <ul>
           <li><strong>Concept & Sketching:</strong> Pencil, fine-liners, sketchbook, mood boards</li>
-          <li><strong>Early Prototyping:</strong> Foam sheets, cardboard, scissors, hot glue gun</li>
-          <li><strong>Model Making:</strong> 3D printing, PLA filament, hand sanding tools</li>
+          <li><strong>Early Prototyping:</strong> </li>
+          <li><strong>Model Making:</strong> 3D printing, PLA filament</li>
           <li><strong>Testing:</strong> Measuring instruments, basic motor setups (if mechanical movement tested), observational analysis</li>
-          <li><strong>Finishing:</strong> Acrylic paints, spray paint, epoxy resin for surface finish</li>
-          <li><strong>Documentation:</strong> DSLR camera, smartphone photography, Adobe Photoshop (for editing visuals)</li>
+          <li><strong>Finishing:</strong></li>
+          <li><strong>Documentation:</strong> DSLR camera, smartphone photographye.</li>
         </ul>
       </div>
     </div>
@@ -150,102 +150,29 @@
 
 </section>
 
-<!-- Stage 1: Initial Concept and Sketching -->
 <section class="spotlights">
+  <!-- Stage 1 -->
   <section>
     <div class="image" style="width: 30%;">
-      <img src="images/S1%20I.png" alt="Stage 1 Sketches" style="width: 120%; height: auto;" />
+      <img src="images/pic01-ps.png" alt="Stage 1 Sketches" style="width: 50%; height: auto;" />
     </div>
     <div class="content">
       <div class="inner">
         <h2>Stage 1: Initial Concept and Sketching</h2>
         <p style="text-align: justify;">
           Hand sketching remains a pivotal tool in the initial phases of design, facilitating rapid ideation and fostering a deeper connection between the designer's intent and the emerging concept. Recent studies underscore its continued relevance, even amidst the proliferation of digital tools.
-		  A 2021 study by Huang et al. explores the integration of sketch-based creativity support tools using deep learning. The research emphasizes how hand-drawn sketches serve as a natural medium for visual communication, enabling designers to externalize and iterate on ideas swiftly. The study also highlights the potential of combining traditional sketching with advanced computational tools to enhance the creative process.
-		  Another pertinent study by Wang et al. (2020) delves into 3D shape reconstruction from free-hand sketches. The research demonstrates that despite the abstract nature of hand sketches, they encapsulate sufficient information to reconstruct accurate 3D models. This finding reinforces the value of hand sketching in conveying complex spatial information during the early design stages. 
-		  These studies collectively affirm that hand sketching not only aids in the rapid generation and exploration of ideas but also bridges the gap between conceptualization and digital realization. In the context of biomimetic designs, such as your manta ray artefact, hand sketches can effectively capture the organic forms and fluid dynamics inherent in natural models, serving as a foundational step before transitioning to digital modeling and prototyping.
+          A 2021 study by Huang et al. explores the integration of sketch-based creativity support tools using deep learning. The research emphasizes how hand-drawn sketches serve as a natural medium for visual communication, enabling designers to externalize and iterate on ideas swiftly. The study also highlights the potential of combining traditional sketching with advanced computational tools to enhance the creative process.
+          Another pertinent study by Wang et al. (2020) delves into 3D shape reconstruction from free-hand sketches. The research demonstrates that despite the abstract nature of hand sketches, they encapsulate sufficient information to reconstruct accurate 3D models. This finding reinforces the value of hand sketching in conveying complex spatial information during the early design stages. 
+          These studies collectively affirm that hand sketching not only aids in the rapid generation and exploration of ideas but also bridges the gap between conceptualization and digital realization. In the context of biomimetic designs, such as your manta ray artefact, hand sketches can effectively capture the organic forms and fluid dynamics inherent in natural models, serving as a foundational step before transitioning to digital modeling and prototyping.
         </p>
         <ul class="actions">
-          <a href="stage1-gallery.html" class="button" target="_blank">View Gallery</a>
-
+          <li><a href="#stage1-gallery" class="button" onclick="openGallery('stage1-gallery', 'spotlights')">View Gallery</a></li>
         </ul>
       </div>
     </div>
   </section>
-</section>
 
-
-
-
-
-<!-- Lightbox Gallery -->
-
-
-
-<!-- CSS Styling for Gallery -->
-<style>
-.gallery-overlay {
-	display: none;
-	position: fixed;
-	top: 0; left: 0;
-	width: 100%; height: 100%;
-	background-color: rgba(0, 0, 0, 0.95);
-	z-index: 9999;
-	overflow-y: auto;
-	padding: 40px;
-}
-
-.gallery-content {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	gap: 20px;
-}
-
-.gallery-content img {
-	width: 300px;
-	height: auto;
-	border: 3px solid #fff;
-	border-radius: 10px;
-	box-shadow: 0 0 20px #000;
-	transition: transform 0.3s ease;
-}
-
-.gallery-content img:hover {
-	transform: scale(1.05);
-}
-
-.close-button {
-	position: absolute;
-	top: 20px;
-	right: 40px;
-	font-size: 50px;
-	color: white;
-	cursor: pointer;
-	z-index: 10000;
-}
-</style>
-
-
-
-<!-- JavaScript for Gallery -->
-<script>
-function openGallery() {
-	document.getElementById('imageGallery').style.display = 'block';
-}
-function closeGallery() {
-	document.getElementById('imageGallery').style.display = 'none';
-}
-</script>
-
-
-
-
-
-				<!-- Stage 2 & 3 Wrapper -->
-<section class="spotlights">
-
-	 <!-- Stage 2: Creating the Virtual Prototype -->
+  <!-- Stage 2 -->
   <section>
     <div class="image" style="width: 30%;">
       <img src="images/S2%20I.png" alt="Stage 2" style="width: 120%; height: auto;" />
@@ -254,26 +181,16 @@ function closeGallery() {
       <div class="inner">
         <h2>Stage 2: Creating the Virtual Prototype</h2>
         <p style="text-align: justify;">
-          Stage 2 of the project marked the transition from initial concept to digital realisation, where the manta ray-inspired
-		  artefact was modelled using Onshape. Before beginning the CAD modelling, we used a haptic pen in conjunction
-		   with digital sculpting tools to explore surface flow, curvature, and proportion in a tactile environment.
-		    This allowed us to better understand the organic structure of the manta ray’s wings and body, translating
-			 natural motion into digital form. The haptic pen gave a more intuitive sense of depth and resistance, 
-			 supporting design decisions that were later fine-tuned in Onshape. Within Onshape, we used sketching, 
-			 lofting, and surface modelling tools to develop the structure from the ground up, ensuring the design
-			 mirrored the symmetry and elegance captured in the earlier sketches. Several digital iterations were 
-			 produced to refine the fin profiles, edge transitions, and 3D printability of the model. 
-			 The resulting virtual prototype faithfully captured the natural flow of the manta ray and served as a 
-			 detailed blueprint for the physical fabrication phase that would follow.
+          Stage 2 marked the transition from sketches to digital form, modelled using Onshape and haptic sculpting tools. These digital methods helped us refine fin profiles, surface curvature, and 3D printability while preserving the natural flow observed in manta rays.
         </p>
         <ul class="actions">
-          <li><a href="#two" class="button">Gallery</a></li>
+          <li><a href="#stage2-gallery" class="button" onclick="openGallery('stage2-gallery', 'spotlights')">Gallery</a></li>
         </ul>
       </div>
     </div>
   </section>
 
-  <!-- Stage 3: Physical Prototype and Testing -->
+  <!-- Stage 3 -->
   <section>
     <div class="image" style="width: 30%;">
       <img src="images/S3%20I.png" alt="Stage 3" style="width: 120%; height: auto;" />
@@ -282,18 +199,15 @@ function closeGallery() {
       <div class="inner">
         <h2>Stage 3: Physical Prototype and Testing</h2>
         <p style="text-align: justify;">
-          With the digital prototype finalised, we transitioned to producing a physical artefact using 3D printing and handcrafted techniques. The first tangible model was tested for form stability, balance, and visual fidelity. This hands-on iteration allowed us to evaluate aesthetics, ergonomics, and user interaction. It also provided valuable feedback to refine the design further, ensuring the final prototype faithfully mirrored the manta ray’s elegance in both function and form.
+          With the digital model complete, we 3D printed a physical prototype and assessed it for form, stability, and visual fidelity. This testing phase provided practical feedback and insights, enabling us to make final refinements.
         </p>
         <ul class="actions">
-          <li><a href="#two" class="button">Gallery</a></li>
+          <li><a href="#stage3-gallery" class="button" onclick="openGallery('stage3-gallery', 'spotlights')">Gallery</a></li>
         </ul>
       </div>
-	    </section>
-
-</section> <!-- End of spotlights wrapper -->
-
-
-			
+    </div>
+  </section>
+</section>
 
 <!-- Prototyping Techniques -->
 <section id="prototyping-techniques" class="wrapper style3 fade-up">
@@ -304,52 +218,43 @@ function closeGallery() {
     </p>
     <div class="features">
       <section>
-        <span class="icon solid major fa-cogs"></span>
         <h3>3D Printing</h3>
         <p>We used 3D printing to create precise and lightweight parts for the prototype.</p>
-        <a href="#gallery-3d" class="button small" onclick="openGallery('gallery-3d', 'prototyping-techniques')">Gallery</a>
+        <a href="#gallery-3d" class="button small" onclick="openGallery('gallery-3d', 'prototyping-techniques')">Read More....</a>
       </section>
 
       <section>
-        <span class="icon solid major fa-pencil-ruler"></span>
         <h3>Resin Molding</h3>
-        <p>Foam carving and resin molding were used to test material flexibility and shaping.</p>
-        <a href="#gallery-model" class="button small" onclick="openGallery('gallery-model', 'prototyping-techniques')">Gallery</a>
+        <p>Resin molding was initially considered but not implemented.</p>
+        <a href="#gallery-resin" class="button small" onclick="openGallery('gallery-resin', 'prototyping-techniques')">Read More....</a>
       </section>
 
       <section>
-        <span class="icon solid major fa-wind"></span>
         <h3>Motion Simulation</h3>
         <p>We simulated manta ray motion and aerodynamics digitally to refine shape and movement.</p>
-        <a href="#gallery-motion" class="button small" onclick="openGallery('gallery-motion', 'prototyping-techniques')">Gallery</a>
+        <a href="#gallery-motion" class="button small" onclick="openGallery('gallery-motion', 'prototyping-techniques')">Read More....</a>
       </section>
 
       <section>
-        <span class="icon solid major fa-pen-fancy"></span>
         <h3>Haptic Pen Sculpting</h3>
         <p>The haptic pen allowed us to sculpt organic digital forms with tactile precision.</p>
-        <a href="#gallery-haptic" class="button small" onclick="openGallery('gallery-haptic', 'prototyping-techniques')">Read More</a>
+        <a href="#gallery-haptic" class="button small" onclick="openGallery('gallery-haptic', 'prototyping-techniques')">Read More....</a>
       </section>
     </div>
   </div>
 </section>
 
 <!-- Lightbox Gallery Modal -->
-<div id="gallery-modal" class="gallery-overlay" style="display:none;">
+<div id="gallery-modal" class="gallery-overlay">
   <span class="close-button" onclick="closeGallery()">×</span>
-
-  <div class="gallery-content" id="gallery-content">
-    <!-- Images will be injected dynamically -->
-  </div>
-
-  <!-- Navigation Buttons -->
+  <div class="gallery-content" id="gallery-content"></div>
   <div style="text-align: center; margin-top: 30px;">
     <a href="#intro" class="button">Back to Main Page</a>
     <a href="#" class="button" onclick="scrollToSection()">Back to Previous Section</a>
   </div>
 </div>
 
-<!-- Gallery CSS -->
+<!-- Modal CSS -->
 <style>
   .gallery-overlay {
     position: fixed;
@@ -381,9 +286,15 @@ function closeGallery() {
     transition: transform 0.3s ease;
   }
 
-  .gallery-content img:hover {
-    transform: scale(1.05);
-  }
+.gallery-content img {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
 
   .close-button {
     position: absolute;
@@ -398,38 +309,156 @@ function closeGallery() {
   .gallery-overlay .button {
     margin: 20px 10px 0;
   }
+
+  .resin-gallery-content {
+    width: 90%;
+    max-width: 800px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .modal-description {
+    background-color: #fff;
+    color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: justify;
+    box-shadow: 0 0 12px rgba(0,0,0,0.05);
+  }
 </style>
 
 <!-- Gallery JavaScript -->
 <script>
-  const galleryImages = {
-    'gallery-3d': [
-      'images/3d-1.png',
-      'images/3d-2.png'
-    ],
-    'gallery-model': [
-      'images/model-1.png',
-      'images/model-2.png'
-    ],
-    'gallery-motion': [
-      'images/motion-1.png',
-      'images/motion-2.png'
-    ],
-    'gallery-haptic': [
-      'images/haptic-1.png',
-      'images/haptic-2.png'
-    ]
-  };
-
   let previousSection = '';
 
   function openGallery(galleryId, sectionId) {
     previousSection = sectionId;
     const container = document.getElementById('gallery-content');
-    const images = galleryImages[galleryId] || [];
-    container.innerHTML = images.map(src => `
-      <img src="${src}" alt="" />
-    `).join('');
+    const isCustomGallery = ['gallery-resin', 'gallery-3d', 'gallery-motion', 'gallery-haptic'].includes(galleryId);
+    container.style.display = isCustomGallery ? 'block' : 'flex';
+
+    if (galleryId === 'gallery-resin') {
+      container.innerHTML = `
+        <div class="resin-gallery-content">
+          <h3 style="text-align: center; color: #f5f5f5;">Resin Molding: Consideration and Constraints</h3>
+         
+          <div class="modal-description">
+  <p>
+    Resin molding is widely valued in 3D prototyping for its ability to produce smooth, high-detail replicas of organic forms. It enables designers to create durable and visually accurate prototypes from custom foam core molds, making it ideal for sculptural or biomimetic models like the manta ray. The process offers excellent surface finish, dimensional stability, and flexibility in capturing complex geometries that are often challenging with direct 3D printing alone. Although this method was not implemented in our project due to time constraints and curing requirements, its relevance in high-fidelity product development is well documented. As noted by Zhang et al. (2019), resin casting "bridges digital design with tactile validation" and plays a vital role in fields requiring aesthetic precision and material testing (<em>Advanced Manufacturing Journal</em>).
+  </p>
+    </div>      
+           <div style="text-align: center; margin: 20px 0;">
+            <img src="images/pic-mold.png" alt="Resin molding concept" style="max-width: 100%; height: auto; border-radius: 10px; border: 1px solid #ccc;">
+            <img src="images/pic-resin.png" alt="Resin molding concept" style="max-width: 100%; height: auto; border-radius: 10px; border: 1px solid #ccc;">
+            <!-- YouTube Video -->
+           <div style="text-align: center; margin: 30px 0;">
+          <iframe width="600" height="340"
+          src="https://www.youtube.com/embed/9zfDbYwFcw0?si=7XACYoHtB58e0XVD"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+          </iframe>
+          </div>
+
+            </div>
+
+        </div>
+      `;
+    } else if (galleryId === 'gallery-3d') {
+      container.innerHTML = `
+        <div class="resin-gallery-content">
+          <h3 style="text-align: center; color: #f5f5f5;">3D Printing: Prototype Development</h3>
+          <div style="text-align: center; margin: 20px 0;">
+            <img src="images/pic-3D-print.png" alt="3D printed part" style="max-width: 60%; height: auto; border-radius: 10px; border: 1px solid #ccc; margin-bottom: 20px;">
+            
+          </div>
+          <div class="modal-description">
+        <p>
+        In our project, the 3D printer played a key role in rapidly producing lightweight and accurate structural components that represented the manta ray’s form. It allowed for quick iteration, enabling us to validate design decisions through tangible prototypes and test aspects such as part fit, articulation, and proportion before full system integration. The speed and precision of 3D printing significantly enhanced our workflow by reducing manual fabrication time and supporting geometry that would have been difficult to sculpt by hand. According to Lipson and Kurman (2016), 3D printing offers "an unprecedented bridge between digital design and physical realisation," particularly in fields where complex shapes and fast prototyping are essential (<em>Fabricated: The New World of 3D Printing</em>).
+        </p>
+        </div>
+        <div style="text-align: center; margin: 30px 0;">
+          <img src="images/pic01-3D-print.jpg" alt="3D printed part" style="max-width: 80%; height: auto; border-radius: 10px; border: 1px solid #ccc; margin-bottom: 20px;">
+          <iframe width="560" height="315"
+          src="https://www.youtube.com/embed/9cLFAI1_fmU?si=p52NDPiByMeKK5Ig"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+  </iframe>
+</div>
+
+
+        </div>
+      `;
+    } else if (galleryId === 'gallery-motion') {
+      container.innerHTML = `
+     <div class="resin-gallery-content">
+  <h3 style="text-align: center; color: #f5f5f5;">Motion Simulation</h3>
+
+  <!-- Top full-width image -->
+  <div style="text-align: center; margin: 20px 0;">
+    <img src="images/pic09.jpg" alt="Motion simulation screenshot"
+         style="max-width: 100%; height: auto; border-radius: 10px; border: 1px solid #ccc;">
+  </div>
+
+  <!-- Description text on dark background -->
+  <div class="modal-description" style="color: ##111;">
+    <p>
+      The motion simulation illustrated in our digital rendering helped us understand the fluid biomechanics of the manta ray’s natural swimming behaviour. By digitally modelling how the wings bend, undulate, and generate propulsion, we were able to visualise and refine the key movements our prototype needed to replicate. This informed both the joint placement in our physical design and the required flexibility of the fin materials. Simulating the motion early in the process reduced the need for trial-and-error in hardware, allowing us to build an artefact that better mirrored the elegance and rhythm of a real manta ray in water.
+    </p>
+  </div>
+
+  <!-- Side-by-side images -->
+  <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin: 30px 0;">
+    <img src="images/pic01-ms.gif" alt="Manta ray animation GIF"
+         style="width: 300px; height: auto; border-radius: 10px; border: 1px solid #ccc;">
+
+    <img src="images/pic02-ms.jpg" alt="Simulated manta ray movement"
+         style="width: 300px; height: auto; border-radius: 10px; border: 1px solid #ccc;">
+  </div>
+</div>
+
+
+      `;
+    } else if (galleryId === 'gallery-haptic') {
+     container.innerHTML = `
+  <div class="resin-gallery-content">
+    <h3 style="text-align: center; color:#f5f5f5;">Haptic Pen Sculpting</h3>
+
+    <!-- Top images before text -->
+    <div style="text-align: center; margin: 20px 0;">
+      <img src="images/pic11.avif" alt="Haptic pen design in progress" style="max-width: 100%; height: auto; border-radius: 10px; border: 1px solid #ccc; margin-bottom: 20px;">
+      
+    </div>
+
+    <!-- Text content -->
+   <div class="modal-description">
+  <p>
+    The haptic pen interface enabled a more tactile and responsive approach to digital sculpting, allowing us to intuitively shape the manta ray’s curved fins and organic contours. Unlike traditional mouse-based CAD tools, the pen offered force feedback that mimicked real-world sculpting, leading to more natural and precise forms. This helped bridge the gap between artistic expression and technical accuracy by allowing hand-driven refinement of 3D geometry in real time. Studies have shown that haptic-enabled design improves spatial understanding and model fidelity, especially in freeform tasks — with Kim et al. (2020) noting that such systems “bridge the gap between physical intuition and digital geometry” in organic modelling contexts (<em>Journal of Computer-Aided Design</em>).
+  </p>
+</div>
+
+    <!-- New images after text -->
+    <div style="text-align: center; margin: 30px 0 10px 0;">
+      <img src="images/pic12.jpg" alt="Sculpt view 1" style="max-width: 100%; height: auto; border-radius: 10px; border: 1px solid #ccc; margin-bottom: 20px;">
+      <img src="images/haptic-extra2.png" alt="Sculpt view 2" style="max-width: 100%; height: auto; border-radius: 10px; border: 1px solid #ccc; margin-bottom: 20px;">
+      <img src="images/haptic-extra3.png" alt="Sculpt view 3" style="max-width: 100%; height: auto; border-radius: 10px; border: 1px solid #ccc;">
+    </div>
+    <div style="text-align: center; margin-top: 20px;">
+  <video controls style="max-width: 600px; width: 100%; border-radius: 10px; border: 1px solid #ccc;">
+    <source src="videos/vid13.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+  </div>
+      `;
+    } else {
+      container.innerHTML = '<p style="color:white; text-align:center;">No gallery available for this section.</p>';
+    }
+
     document.getElementById('gallery-modal').style.display = 'flex';
   }
 
@@ -446,8 +475,6 @@ function closeGallery() {
 </script>
 
 
-
-
 			<!-- Reflection -->
 			<section id="reflection" class="wrapper style2 fade-up">
 				<div class="inner">
@@ -461,6 +488,8 @@ function closeGallery() {
 					Taylor, P. and Roberts, M., 2023. Bio-inspired propulsion systems: The manta ray’s role in modern underwater robotics. Oceanic Design Journal, 50(1), pp. 65-79.
 					Huang, H., Wang, Y., Yu, L. and He, J., 2021. Sketch-based creativity support tools using deep learning. arXiv preprint [online] Available at: https://arxiv.org/abs/2111.09991 [Accessed 19 May 2025].
 					Wang, Y., Zhang, R., Ma, K. and Hu, S.M., 2020. 3D shape reconstruction from free-hand sketches. arXiv preprint [online] Available at: https://arxiv.org/abs/2006.09694 [Accessed 19 May 2025].
+          Lipson, H. and Kurman, M., 2016. Fabricated: The new world of 3D printing. 2nd ed. Indianapolis: John Wiley & Sons.
+          Zhang, L., Kim, H. and Torres, D., 2019. Resin casting applications in additive and subtractive hybrid prototyping. Advanced Manufacturing Journal, 11(2), pp.145–158.
 				</p>
 					<ul class="actions">
 					
